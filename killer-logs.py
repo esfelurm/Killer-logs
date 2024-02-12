@@ -1,29 +1,5 @@
 #!/usr/bin/env python
 
-# This is a linux log file eraser. It doesn't just clean
-# certain data out of the logs - it securely deletes them
-# with the shred tool (which must be installed). 
-
-# There are no arguments to pass to this script, just run
-# it with elevated privledges and it will securely wipe every
-# log you have (but feel free to add more logfile locations)
-
-# Note: I am not a python programmer, I just needed a script
-# to do this, so please use eye bleach once you're done reading
-# the code.
-
-# This wouldn't have been possible without the help of tekwizz123
-# to tell me how to python. Much props to him.
-
-# I take no responsibility for any damage this causes, use it
-# at your own risk! The first time I tried it, it froze my Kali
-# VM, but after that it worked fine. It's also been tested
-# successfully on multiple virtual private servers.
-
-# If you have questions, comments, concerns or want to tell
-# me about more logfile locations, you can email me at
-# dex @at@ dexstor.org
-
 import os
 import sys
 from subprocess import check_output
